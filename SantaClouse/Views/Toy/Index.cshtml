@@ -1,0 +1,26 @@
+﻿@model SantaClouse.Models.Toys
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Toys</h2>
+<hr />
+
+<div class="jumbotron">
+    <div class="row">
+        @if (Session["IsAdmin"].Equals(true))
+        {
+            <div class="col-md-3"><h3>Name</h3></div>
+            <div class="col-md-3"><h3>Picture</h3></div>
+            <div class="col-md-3"><h3>Amount</h3></div>
+            <div class="col-md-3"><h3>Cost</h3></div>
+        }
+        else
+        {
+            <div class="col-md-4"><h3>Name</h3></div>
+            <div class="col-md-4"><h3>Picture</h3></div>
+            <div class="col-md-4"><h3>Amount</h3></div>
+        }
+    </div>
+</div>

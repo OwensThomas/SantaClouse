@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantaClouse", "SantaClouse\SantaClouse.csproj", "{DD28F6F6-A589-48E6-BBF6-BD79024ECDAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantaClouseTests", "SantaClouseTests\SantaClouseTests.csproj", "{857608D8-D531-4FA8-A5F0-7A58D49C4A09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD28F6F6-A589-48E6-BBF6-BD79024ECDAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD28F6F6-A589-48E6-BBF6-BD79024ECDAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD28F6F6-A589-48E6-BBF6-BD79024ECDAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD28F6F6-A589-48E6-BBF6-BD79024ECDAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{857608D8-D531-4FA8-A5F0-7A58D49C4A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{857608D8-D531-4FA8-A5F0-7A58D49C4A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{857608D8-D531-4FA8-A5F0-7A58D49C4A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{857608D8-D531-4FA8-A5F0-7A58D49C4A09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,95 @@
+MongoDB 
+payment
+transaction
+
+appsettings
+
+
+
+percorso fino alla cartella 
+
+git init
+
+blocconote --> .gitignore  (tramite visual code)
+
+ctrl + SHIFT + destro --> apri in git bash qui
+git init
+git remote add https://github.com/OwensThomas/SantaClouse
+git add .
+git commit -m"messaggio di commit"
+git push --set-upstream origin master
+
+
+
+
+
+towen@PC-THOMAS MINGW64 ~/Documents/ITS/C# Framework .NET/SantaClouse (master)
+$ git int
+git: 'int' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+towen@PC-THOMAS MINGW64 ~/Documents/ITS/C# Framework .NET/SantaClouse (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/towen/Documents/ITS/C# Framewo                                                                                                                                                                                                                                                                rk .NET/SantaClouse/.git/
+
+towen@PC-THOMAS MINGW64 ~/Documents/ITS/C# Framework .NET/SantaClouse (master)
+$ git remote add origin https://github.com/OwensThomas/SantaClouse
+fatal: remote origin already exists.
+
+towen@PC-THOMAS MINGW64 ~/Documents/ITS/C# Framework .NET/SantaClouse (master)
+$ git remote add https://github.com/OwensThomas/SantaClouse
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+towen@PC-THOMAS MINGW64 ~/Documents/ITS/C# Framework .NET/SantaClouse (master)
+$ git add .
+
+towen@PC-THOMAS MINGW64 ~/Documents/ITS/C# Framework .NET/SantaClouse (master)
+$ git commit -m"messaggio di commit"
+On branch master
+nothing to commit, working tree clean
+
+towen@PC-THOMAS MINGW64 ~/Documents/ITS/C# Framework .NET/SantaClouse (master)
+$ git remote add @PC-THOMAS MINGW64 ~/Documents/ITS/C# Framework .NET/SantaClous                                                                                                                                                                                                                                                                e (master)
+bash: syntax error near unexpected token `('
+
+
+towen@PC-THOMAS MINGW64 ~/Documents/ITS/C# Framework .NET/SantaClouse (master)
+$ git remote set-url origin https://github.com/OwensThomas/SantaClouse.git
+
+towen@PC-THOMAS MINGW64 ~/Documents/ITS/C# Framework .NET/SantaClouse (master)
+$ git add .
+
+towen@PC-THOMAS MINGW64 ~/Documents/ITS/C# Framework .NET/SantaClouse (master)
+$ git commit -m"banana bho"
+On branch master
+nothing to commit, working tree clean
+
+towen@PC-THOMAS MINGW64 ~/Documents/ITS/C# Framework .NET/SantaClouse (master)
+$ git push --set-upstream origin master
+Counting objects: 96, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (94/94), done.
+Writing objects: 100% (96/96), 395.67 KiB | 4.95 MiB/s, done.
+Total 96 (delta 16), reused 0 (delta 0)
+remote: Resolving deltas: 100% (16/16), done.
+To https://github.com/OwensThomas/SantaClouse.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+towen@PC-THOMAS MINGW64 ~/Documents/ITS/C# Framework .NET/SantaClouse (master)
+$ ^C
+
+towen@PC-THOMAS MINGW64 ~/Documents/ITS/C# Framework .NET/SantaClouse (master)
+$
+

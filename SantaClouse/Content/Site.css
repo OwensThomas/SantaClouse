@@ -1,0 +1,38 @@
+﻿body {
+    background: url("/Img/natale2.jpg") ;
+    background-size: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.jumbotron
+{
+    background-color: rgba(255, 255, 255, 0.6);
+
+}
+.col-md-4
+{
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: justify;
+    width: auto;
+	height: auto;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
