@@ -23,4 +23,64 @@
             <div class="col-md-4"><h3>Amount</h3></div>
         }
     </div>
+
+    @foreach (var toy in Model.EntityList)
+    {
+        <hr />
+        <div class="row">
+            @if (toy.Amount > 0)
+            {
+                if (Session["IsAdmin"].Equals(true))
+                {
+                    <div class="col-md-3"><h4>@toy.Name</h4></div>
+                    <div class="col-md-3">
+                        <div class="style_prevu_kit">
+                            <img class="img-responsive" src="@(String.Format("../Image/Toys/{0}.jpg", toy.Name))" />
+                        </div>
+                    </div>
+                    <div class="col-md-3"><h4>@toy.Amount</h4></div>
+                    <div class="col-md-3"><h4>@string.Concat(toy.Cost.ToString("F"), " €")</h4></div>
+                }
+                else
+                {
+                    <div class="col-md-4"><h4>@toy.Name</h4></div>
+                    <div class="col-md-4">
+                        <div class="style_prevu_kit">
+                            <img class="img-responsive" src="@(String.Format("../Image/Toys/{0}.jpg", toy.Name))" />
+                        </div>
+                    </div>
+                    <div class="col-md-4"><h4>@toy.Amount</h4></div>
+                }
+            }
+            else
+            {
+                <font color="red">
+                    @if (Session["IsAdmin"].Equals(true))
+                    {
+                        <div class="col-md-3">
+                            <h4>@toy.Name</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="style_prevu_kit">
+                                <img class="img-responsive" src="@(String.Format("../Image/Toys/{0}.jpg", toy.Name))" />
+                            </div>
+                        </div>
+                        <div class="col-md-3"><h4>@toy.Amount</h4></div>
+                        <div class="col-md-3"><h4>@string.Concat(toy.Cost.ToString("F"), " €")</h4></div>
+                    }
+                    else
+                    {
+                        <div class="col-md-4"><h4>@toy.Name</h4></div>
+                        <div class="col-md-4">
+                            <div class="style_prevu_kit">
+                                <img class="img-responsive" src="@(String.Format("../Image/Toys/{0}.jpg", toy.Name))" />
+                            </div>
+                        </div>
+                        <div class="col-md-4"><h4>@toy.Amount</h4></div>
+                    }
+                </font>
+            }
+        </div>
+    }
 </div>
+@Html.ActionLink("Back", "../Home", null, new { @class = "btn btn-primary" })>
