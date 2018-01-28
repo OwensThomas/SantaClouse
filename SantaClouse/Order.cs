@@ -18,7 +18,7 @@ namespace SantaClouse
         public string Kid { get; set; }
 
         [BsonElement("status")]
-        public Status TypeStatus { get; set; }
+        public TypeStatus Status { get; set; }
 
         [BsonElement("toys")]
         public List<Toy> Toys { get; set; }

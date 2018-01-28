@@ -5,7 +5,7 @@ using System.Web;
 
 namespace SantaClouse
 {
-    public enum Status
+    public enum TypeStatus
     {
         inProgress = 0,
         ReadyToSend = 1,

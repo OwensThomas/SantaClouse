@@ -54,7 +54,7 @@ namespace SantaClouse
             IMongoCollection<Order> orderCollection = database.GetCollection<Order>("order");
             var filter = Builders<Order>.Filter.Eq("_id", ObjectId.Parse(order.ID));
             var update = Builders<Order>.Update
-                .Set("amount", order.TypeStatus);
+                .Set("status", order.Status);
             try
             {
                 orderCollection.UpdateOne(filter, update);
@@ -65,15 +65,32 @@ namespace SantaClouse
                 return false;
             }
         }
+
         public bool UpdateToy(Toy toy)
         {
             IMongoCollection<Toy> toyCollection = database.GetCollection<Toy>("toys");
-            var filter = Builders<Toy>.Filter.Eq("name", toy.Name);
+            var filter = Builders<Toy>.Filter.Eq("_id", toy.ID);
             var update = Builders<Toy>.Update
                 .Set("amount", toy.Amount);
             try
             {
                 toyCollection.UpdateOne(filter, update);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public bool RemoveToy(string id)
+        {
+            IMongoCollection<Toy> toyCollection = database.GetCollection<Toy>("toys");
+            var filter = Builders<Toy>.Filter.Eq("_id", ObjectId.Parse(id));
+
+            try
+            {
+                toyCollection.DeleteOne(filter);
                 return true;
             }
             catch (Exception)
