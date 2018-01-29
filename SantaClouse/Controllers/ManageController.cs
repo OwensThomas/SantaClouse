@@ -8,7 +8,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using SantaClouse.Models;
 
-namespace SantaClouse.Controllers.DACANCELLARE
+namespace SantaClouse.Controllers
 {
     [Authorize]
     public class ManageController : Controller

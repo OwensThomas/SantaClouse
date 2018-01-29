@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using SantaClouse;
 using System.Security.Cryptography;
-using NataleMongoDB = SantaClouse.MongoDB;
+using MongoDB = SantaClouse.MongoDB;
 using System.Text;
 
 namespace SantaClouse.Controllers
@@ -54,20 +54,17 @@ namespace SantaClouse.Controllers
         public ActionResult Login(User user)
         {
             user.Password = Encrypt(user.Password);
-            NataleMongoDB db = new NataleMongoDB();
+            MongoDB db = new MongoDB();
             var account = db.GetUser(user);
             if (account != null)
             {
-                Session["Email"] = account.Email.ToString();
-                Session["ID"] = account.ID.ToString();
                 Session["ScreenName"] = account.ScreenName.ToString();
-                Session["IsAdmin"] = account.IsAdmin.ToString();
-                return RedirectToAction($"../Home");
+                Session["IsAdmin"] = Convert.ToBoolean(account.IsAdmin.ToString());
+                return RedirectToAction("../Home");
             }
             else
             {
-                ModelState.AddModelError("", "Invalid password or usename");
-
+                ModelState.AddModelError("", "Username or Password Error");
             }
             return View();
         }

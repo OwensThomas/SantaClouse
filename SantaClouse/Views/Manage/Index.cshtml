@@ -34,26 +34,6 @@
                 Non sono configurati provider di autenticazione a due fattori. Vedere <a href="http://go.microsoft.com/fwlink/?LinkId=403804">questo articolo</a>
                 per informazioni su come configurare l'applicazione ASP.NET per il supporto dell'autenticazione a due fattori.
             </p>
-            @*@if (Model.TwoFactor)
-                {
-                    using (Html.BeginForm("DisableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-                    {
-                        @Html.AntiForgeryToken()
-                        <text>Abilitata
-                        <input type="submit" value="Disabilita" class="btn btn-link" />
-                        </text>
-                    }
-                }
-                else
-                {
-                    using (Html.BeginForm("EnableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-                    {
-                        @Html.AntiForgeryToken()
-                        <text>Disabilitata
-                        <input type="submit" value="Abilita" class="btn btn-link" />
-                        </text>
-                    }
-                }*@
         </dd>
     </dl>
 </div>

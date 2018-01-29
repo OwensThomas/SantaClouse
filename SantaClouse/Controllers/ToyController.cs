@@ -24,7 +24,7 @@ namespace SantaClouse.Controllers
             }
             else
             {
-                return RedirectToAction("../Users/Login");
+                return RedirectToAction("Login", "Users");
             }
         }
     }

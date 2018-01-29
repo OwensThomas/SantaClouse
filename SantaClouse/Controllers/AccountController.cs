@@ -10,7 +10,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using SantaClouse.Models;
 
-namespace SantaClouse.Controllers.DACANCELLARE
+namespace SantaClouse.Controllers
 {
     [Authorize]
     public class AccountController : Controller
@@ -68,6 +68,7 @@ namespace SantaClouse.Controllers.DACANCELLARE
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
+            returnUrl = ""
             if (!ModelState.IsValid)
             {
                 return View(model);
